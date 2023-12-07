@@ -1,0 +1,1 @@
+# dudeshape_shop_cosmetic

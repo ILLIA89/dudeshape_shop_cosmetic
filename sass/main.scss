@@ -1,4 +1,3 @@
-body{
-    background-color: white;
-}
-
+@import './utils/variables';
+@import './base/baseStyle';
+@import './base/bodyStyles';

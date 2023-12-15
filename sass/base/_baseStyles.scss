@@ -1,7 +1,4 @@
-.list {
-    list-style: none;
-    margin: 0;
-}
+
 
 p,
 h1,
@@ -20,6 +17,7 @@ ul {
 
 button {
     cursor: pointer;
+
 }
 
 address {
@@ -44,3 +42,13 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+.reset-link {
+    text-decoration: none;
+}
+
+.reset-list {
+    list-style: none;
+    margin: 0;
+}
+

@@ -7,10 +7,9 @@
     <title>Dudeshape</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;1,700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,800;1,700;1,800&display=swap" rel="stylesheet">
     <!-- Для роботи з Sass стилі завжди підключаємо до мініфікованого файлу  -->
     <link
       rel="stylesheet"
@@ -23,28 +22,37 @@
       <nav class="nav container">
         <a class="logo reset-link" href="">Dudeshape</a>
         <ul class="nav-menu reset-list">
-          <li class="nav-item">
+          <li>
             <a class="nav-link reset-link" href="">Home</a>
           </li>
-          <li class="nav-item">
+          <li>
             <a class="nav-link reset-link" href="">Products</a>
           </li>
-          <li class="nav-item">
+          <li>
             <a class="nav-link reset-link" href="">About Us</a>
           </li>
-          <li class="nav-item">
+          <li>
             <a class="nav-link reset-link" href="">Contact Us</a>
           </li>
         </ul>
         <ul class="nav-btn-list reset-list">
           <li class="nav-btn-item">
-            <button type="button" class="nav-btn">Hello</button>
+            <button type="button" class="nav-btn" tabindex="-1">
+              <svg width="24" height="24"class="nav-btn-icon" tabindex="0">
+                <use href="images/sprite.svg#icon-logo-room"></use>
+              </svg>
+            </button>
           </li>
           <li class="nav-btn-item">
-            <button type="button" class="nav-btn">Hello</button>
+            <button type="button" class="nav-btn" tabindex="-1"><svg width="24" height="24" class="nav-btn-icon"  tabindex="0">
+                <use href="images/sprite.svg#icon-buy"></use>
+              </svg>
+            </button></button>
           </li>
           <li class="nav-btn-item">
-            <button type="button" class="nav-btn">Hello</button>
+            <button type="button" class="nav-btn" tabindex="-1"><svg width="24" height="24"class="nav-btn-icon custom-burg-icon" tabindex="0">
+                <use href="images/sprite.svg#icon-burger"></use>
+              </svg></button>
           </li>
         </ul>
       </nav>

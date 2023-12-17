@@ -1,0 +1,25 @@
+.hero{
+    background: $bgHeaderHeroColor;
+}
+
+.wrapper-hero{
+    padding: 47px 0 102px 0;
+}
+
+.hero-title{
+color: $mainHeadColor;
+max-width: 621px;
+margin-left: 0;
+margin-bottom: 30px;
+font-size: 56px;
+line-height: 1.25;
+font-weight: 500;
+}
+
+.hero-text{
+    color: $textColor;
+    max-width: 516px;
+    margin-left: 0;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}

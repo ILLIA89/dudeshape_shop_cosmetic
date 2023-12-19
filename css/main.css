@@ -184,4 +184,76 @@ body {
   margin-left: 0;
   margin-bottom: 30px;
   line-height: 1.6;
+}
+
+.hero-search-form {
+  max-width: 326px;
+}
+.hero-search-form .hero-search-form-wrap {
+  position: relative;
+  display: inline-block;
+}
+.hero-search-form .hero-search-input {
+  color: #999999;
+  font-family: Red Hat Display;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1.4;
+  padding: 14px 48px 14px 16px;
+  width: 326px;
+  height: 48px;
+  outline: none;
+  border: none;
+  background: #fff;
+}
+.hero-search-form .hero-search-input::-webkit-input-placeholder {
+  color: #999999;
+  font-family: Red Hat Display;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1.4;
+}
+.hero-search-form .hero-search-input::-moz-placeholder {
+  color: #999999;
+  font-family: Red Hat Display;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1.4;
+}
+.hero-search-form .hero-search-input:-ms-input-placeholder {
+  color: #999999;
+  font-family: Red Hat Display;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1.4;
+}
+.hero-search-form .hero-search-input::-ms-input-placeholder {
+  color: #999999;
+  font-family: Red Hat Display;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1.4;
+}
+.hero-search-form .hero-search-input::placeholder {
+  color: #999999;
+  font-family: Red Hat Display;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1.4;
+}
+.hero-search-form .hero-search-input:focus {
+  outline: 2px solid #402F2C;
+}
+.hero-search-form .hero-search-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 8px;
+  width: 32px;
+  height: 32px;
+  background: #402F2C;
+  border: none;
+}
+.hero-search-form .hero-search-icon {
+  fill: #fff;
 }/*# sourceMappingURL=main.css.map */

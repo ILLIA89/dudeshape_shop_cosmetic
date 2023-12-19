@@ -7,9 +7,12 @@
     <title>Dudeshape</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,800;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,800;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
     <!-- Для роботи з Sass стилі завжди підключаємо до мініфікованого файлу  -->
     <link
       rel="stylesheet"
@@ -38,21 +41,29 @@
         <ul class="nav-btn-list reset-list">
           <li class="nav-btn-item">
             <button type="button" class="nav-btn" tabindex="-1">
-              <svg width="24" height="24"class="nav-btn-icon" tabindex="0">
+              <svg width="24" height="24" class="nav-btn-icon" tabindex="0">
                 <use href="images/sprite.svg#icon-logo-room"></use>
               </svg>
             </button>
           </li>
           <li class="nav-btn-item">
-            <button type="button" class="nav-btn" tabindex="-1"><svg width="24" height="24" class="nav-btn-icon"  tabindex="0">
+            <button type="button" class="nav-btn" tabindex="-1">
+              <svg width="24" height="24" class="nav-btn-icon" tabindex="0">
                 <use href="images/sprite.svg#icon-buy"></use>
               </svg>
-            </button></button>
+            </button>
           </li>
           <li class="nav-btn-item">
-            <button type="button" class="nav-btn" tabindex="-1"><svg width="24" height="24"class="nav-btn-icon custom-burg-icon" tabindex="0">
+            <button type="button" class="nav-btn" tabindex="-1">
+              <svg
+                width="24"
+                height="24"
+                class="nav-btn-icon custom-burg-icon"
+                tabindex="0"
+              >
                 <use href="images/sprite.svg#icon-burger"></use>
-              </svg></button>
+              </svg>
+            </button>
           </li>
         </ul>
       </nav>
@@ -62,22 +73,48 @@
         <div class="container">
           <div class="wrapper-hero">
             <h1 class="hero-title">Get Your Best Cosmetic Products Here</h1>
-          <p class="hero-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
-          
-          <form class="hero-search-form">
-            <input type="text" name="search" class="hero-search-form" placeholder="Search...">
-            <button></button>
-          </form>
+            <p class="hero-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+            </p>
 
-          <button type="button"></button>
+            <form class="hero-search-form">
+              <div class="hero-search-form-wrap">
+                <input
+                  type="text"
+                  name="search"
+                  class="hero-search-input"
+                  placeholder="Search..."
+                />
+                <button type="submit" class="hero-search-btn">
+                  <svg width="16" height="16" class="hero-search-icon">
+                    <use href="images/sprite.svg#search-icon"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
+
+            <button type="button"></button>
           </div>
-          
-<div class="slider">
 
-</div>
+          <div class="slider"></div>
         </div>
       </section>
     </main>
     <footer></footer>
+
+    <script>
+      (() => {
+        document
+          .querySelector('.hero-search-form')
+          .addEventListener('submit', e => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`)
+            );
+          });
+      })();
+    </script>
   </body>
 </html>

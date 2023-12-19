@@ -1,0 +1,50 @@
+//......HERO-INPUT....... //
+.hero-search-form {
+  max-width: 326px;
+  .hero-search-form-wrap {
+    position: relative;
+    display: inline-block;
+  }
+
+  .hero-search-input {
+    color: $heroFormTextColor;
+    font-family: Red Hat Display;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1.4;
+    padding: 14px 48px 14px 16px;
+    width: 326px;
+    height: 48px;
+    outline: none;
+    border: none;
+    background: $bodyButtonFormColor;
+
+    &::placeholder {
+      color: $heroFormTextColor;
+      font-family: Red Hat Display;
+      font-weight: 400;
+      font-size: 14px;
+      letter-spacing: 1.4;
+    }
+
+    &:focus {
+      outline: 2px solid $btnTitleBgColor;
+    }
+  }
+
+  .hero-search-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 8px;
+    width: 32px;
+    height: 32px;
+    background: $btnTitleBgColor;
+    border: none;
+  }
+  .hero-search-icon {
+    fill: $bodyButtonFormColor;
+  }
+}
+
+//......FOOTER-INPUT....... //

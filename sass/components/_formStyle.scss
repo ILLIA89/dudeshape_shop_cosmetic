@@ -1,6 +1,7 @@
 //......HERO-INPUT....... //
 .hero-search-form {
   max-width: 326px;
+  margin-bottom: 60px;
   .hero-search-form-wrap {
     position: relative;
     display: inline-block;
@@ -28,7 +29,8 @@
     }
 
     &:focus {
-      outline: 2px solid $btnTitleBgColor;
+      border: 2px solid $btnTitleBgColor;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     }
   }
 
@@ -41,6 +43,9 @@
     height: 32px;
     background: $btnTitleBgColor;
     border: none;
+    &:focus {
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
   }
   .hero-search-icon {
     fill: $bodyButtonFormColor;

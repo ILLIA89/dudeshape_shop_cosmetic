@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dudeshape</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -70,7 +74,7 @@
     </header>
     <main>
       <section class="hero">
-        <div class="container">
+        <div class="container hero-container">
           <div class="wrapper-hero">
             <h1 class="hero-title">Get Your Best Cosmetic Products Here</h1>
             <p class="hero-text">
@@ -94,15 +98,46 @@
               </div>
             </form>
 
-            <button type="button"></button>
+            <button type="button" class="hero-btn">Shop Now</button>
           </div>
-
-          <div class="slider"></div>
+          <!-- Slider main container -->
+          <div class="swiper mySwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="images/cosmetic-set.jpg" alt="cosmetic-set" />
+              </div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+            </div>
+            <div class="swiper-buttons">
+              <div class="btn-prev"></div>
+              <div class="btn-next"></div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
     <footer></footer>
-
+    <!-- Swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize swiper -->
+    <script>
+      const swiper = new Swiper('.mySwiper', {
+        slidesPerViwe: 1,
+        spaceBetween: 10,
+        loop: true,
+        keyboard: {
+          enable: true,
+        },
+        navigation: {
+          nextEl: 'btn-next',
+          prevEl: 'btn-prev',
+        },
+      });
+    </script>
+    <!-- Visual input submit -->
     <script>
       (() => {
         document

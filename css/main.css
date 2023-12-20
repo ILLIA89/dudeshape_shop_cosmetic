@@ -177,7 +177,6 @@ body {
 }
 
 .hero-title {
-  z-index: 2;
   color: #000000;
   max-width: 621px;
   margin-left: 0;
@@ -297,4 +296,9 @@ body {
 
 .hero-slider-icon {
   stroke: #402F2C;
+}
+
+.swiper-slide {
+  width: 796px;
+  height: 609px;
 }/*# sourceMappingURL=main.css.map */

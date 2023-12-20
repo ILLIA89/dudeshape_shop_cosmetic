@@ -3,25 +3,21 @@
 }
 
 .wrapper-hero {
+  outline: 1px solid green;
   padding: 47px 0 102px 0;
 }
 
 .hero-container {
+  outline: 1px solid red;
+  display: flex;
   position: relative;
-  // display: flex;
+  // gap: 28px;
   // justify-content: space-evenly;
 }
 
-.swiper {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 556px;
-  right: 0;
-  max-width: 796px;
-}
-
 .hero-title {
+  // position: relative;
+  z-index: 2;
   color: $mainHeadColor;
   max-width: 621px;
   margin-left: 0;

@@ -165,23 +165,20 @@ body {
 }
 
 .wrapper-hero {
+  outline: 1px solid green;
   padding: 47px 0 102px 0;
 }
 
 .hero-container {
+  outline: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
 }
 
-.swiper {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 556px;
-  right: 0;
-  max-width: 796px;
-}
-
 .hero-title {
+  z-index: 2;
   color: #000000;
   max-width: 621px;
   margin-left: 0;
@@ -292,4 +289,12 @@ body {
 }
 .hero-search-form .hero-search-icon {
   fill: #fff;
+}
+
+.swiper {
+  position: absolute;
+  outline: 1px solid green;
+  max-width: 796px;
+  margin-left: 0;
+  padding-left: 0;
 }/*# sourceMappingURL=main.css.map */

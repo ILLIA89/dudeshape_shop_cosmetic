@@ -174,7 +174,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
 }
 
 .hero-title {
@@ -292,9 +291,10 @@ body {
 }
 
 .swiper {
-  position: absolute;
-  outline: 1px solid green;
+  outline: 1px solid blue;
   max-width: 796px;
-  margin-left: 0;
-  padding-left: 0;
+}
+
+.hero-slider-icon {
+  stroke: #402F2C;
 }/*# sourceMappingURL=main.css.map */

@@ -1,23 +1,21 @@
 .swiper {
-  position: absolute;
-  outline: 1px solid green;
-
+  outline: 1px solid blue;
+  // position: absolute;
+  // left: 11px;
   max-width: 796px;
-  margin-left: 0;
-  padding-left: 0;
+}
+
+.hero-slider-icon {
+  // display: block;
+  // position: relative;
+  // z-index: index 3;
+  stroke: $btnTitleBgColor;
 }
 
 // .swiper-slide {
 //   text-align: center;
+//   width: 100%;
 //   font-size: 18px;
 //   display: flex;
 //   align-items: center;
-// }
-
-// .swiper-btn-container {
-//   max-width: 145px;
-// }
-
-// .swiper-btn {
-//   stroke: black;
 // }

@@ -1,19 +1,24 @@
 .swiper {
+  margin: 0;
+  padding: 0;
   outline: 1px solid blue;
-  // position: absolute;
-  // left: 11px;
+  max-height: 609px;
   max-width: 796px;
+  display: flex;
+  // position: relative;
+}
+.swiper-btn-container {
+  max-width: 145px;
+  // display: flex;
+  outline: 2px solid black;
+  // position: absolute;
+}
+.btn-prev {
+  width: 50px; /* Ширина кнопок */
+  height: 50px; /* Висота кнопок */
+  background-color: #ccc;
 }
 
 .hero-slider-icon {
-  // display: block;
-  // position: relative;
-  // z-index: index 3;
-  stroke: $btnTitleBgColor;
-}
-
-.swiper-slide {
-  width: 796px;
-  height: 609px;
-  // object-fit: contain;
+  stroke: black;
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 p,
 h1,
 h2,
@@ -290,15 +291,27 @@ body {
 }
 
 .swiper {
+  margin: 0;
+  padding: 0;
   outline: 1px solid blue;
+  max-height: 609px;
   max-width: 796px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.swiper-btn-container {
+  max-width: 145px;
+  outline: 2px solid black;
+}
+
+.btn-prev {
+  width: 50px; /* Ширина кнопок */
+  height: 50px; /* Висота кнопок */
+  background-color: #ccc;
 }
 
 .hero-slider-icon {
-  stroke: #402F2C;
-}
-
-.swiper-slide {
-  width: 796px;
-  height: 609px;
+  stroke: black;
 }/*# sourceMappingURL=main.css.map */

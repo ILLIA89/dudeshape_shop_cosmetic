@@ -172,9 +172,8 @@ body {
 
 .hero-container {
   outline: 1px solid red;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  background-color: aquamarine;
+  position: relative;
 }
 
 .hero-title {
@@ -294,24 +293,35 @@ body {
   margin: 0;
   padding: 0;
   outline: 1px solid blue;
-  max-height: 609px;
+  background-color: yellowgreen;
   max-width: 796px;
+  position: absolute;
+}
+.swiper .swiper-btn-container {
+  max-width: 145px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.swiper-btn-container {
-  max-width: 145px;
   outline: 2px solid black;
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  z-index: 222;
 }
-
-.btn-prev {
+.swiper .swiper-wrapper {
+  z-index: 1;
+  top: 50px;
+  right: 50px;
+}
+.swiper .btn-prev,
+.swiper .btn-next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 50px; /* Ширина кнопок */
   height: 50px; /* Висота кнопок */
   background-color: #ccc;
 }
-
-.hero-slider-icon {
+.swiper .hero-slider-icon {
   stroke: black;
 }/*# sourceMappingURL=main.css.map */

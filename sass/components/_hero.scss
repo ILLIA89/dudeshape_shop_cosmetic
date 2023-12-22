@@ -5,12 +5,18 @@
 .wrapper-hero {
   outline: 1px solid green;
   padding: 47px 0 102px 0;
+  // min-width: 100%;
+  // position: absolute;
 }
 
 .hero-container {
   outline: 1px solid red;
-  display: flex;
-  // position: relative;
+  background-color: aquamarine;
+  // display: flex;
+  // margin: 0;
+  // padding: 0;
+  position: relative;
+  // z-index: 9999;
   // gap: 28px;
   // justify-content: space-evenly;
 }

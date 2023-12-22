@@ -12,10 +12,11 @@
 .hero-container {
   outline: 1px solid red;
   background-color: aquamarine;
+  overflow: hidden;
   // display: flex;
   // margin: 0;
   // padding: 0;
-  position: relative;
+  // position: relative;
   // z-index: 9999;
   // gap: 28px;
   // justify-content: space-evenly;

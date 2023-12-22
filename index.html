@@ -101,7 +101,7 @@
             <button type="button" class="hero-btn">Shop Now</button>
           </div>
           <!-- Slider main container -->
-          <div class="hero-swiper swiper mySwiper">
+          <div class="swiper mySwiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
@@ -127,7 +127,7 @@
                 />
               </div>
             </div>
-            <div class="swiper-btn-container">
+            <!-- <div class="swiper-btn-container">
               <div class="btn-prev">
                 <svg width="50" height="50" class="hero-slider-icon">
                   <use href="images/sprite.svg#icon-arrow-left-icon"></use>
@@ -139,7 +139,7 @@
                 </svg>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- <div class="hero-container"></div> -->
         </div>
       </section>
@@ -157,8 +157,8 @@
           enable: true,
         },
         navigation: {
-          nextEl: 'btn-next',
-          prevEl: 'btn-prev',
+          nextEl: '.btn-next',
+          prevEl: '.btn-prev',
         },
       });
     </script>

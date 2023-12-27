@@ -161,24 +161,21 @@ body {
 }
 
 .hero {
-  background: #F9F6F5;
-}
-
-.wrapper-hero {
-  outline: 1px solid green;
+  max-width: 1440px;
   padding: 47px 0 102px 0;
+  margin: 0 auto;
 }
 
-.hero-container {
-  outline: 1px solid red;
-  background-color: aquamarine;
-  overflow: hidden;
+.hero-wrap {
+  background-color: #F9F6F5;
+  background-image: url(../images/cosmetic-set.webp);
+  background-repeat: no-repeat;
+  background-position: 100%;
 }
 
 .hero-title {
   color: #000000;
   max-width: 621px;
-  margin-left: 0;
   margin-bottom: 30px;
   font-size: 56px;
   line-height: 1.25;
@@ -286,23 +283,4 @@ body {
 }
 .hero-search-form .hero-search-icon {
   fill: #fff;
-}
-
-.swiper {
-  margin: 0;
-  padding: 0;
-  outline: 1px solid blue;
-  max-width: 796px;
-  position: relative;
-  top: -607px;
-  bottom: 0;
-  right: 0;
-  left: 545px;
-}
-.swiper .btn-prev,
-.swiper .btn-next {
-  background-color: #ccc;
-}
-.swiper .hero-slider-icon {
-  stroke: black;
 }/*# sourceMappingURL=main.css.map */

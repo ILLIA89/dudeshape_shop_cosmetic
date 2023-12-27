@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dudeshape</title>
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -73,61 +73,60 @@
       </nav>
     </header>
     <main>
-      <section class="hero">
-        <div class="container hero-container">
-          <div class="wrapper-hero">
-            <h1 class="hero-title">Get Your Best Cosmetic Products Here</h1>
-            <p class="hero-text">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy
-            </p>
+      <section class="hero hero-wrap">
+        <div class="container">
+          <h1 class="hero-title">Get Your Best Cosmetic Products Here</h1>
+          <p class="hero-text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy
+          </p>
 
-            <form class="hero-search-form">
-              <div class="hero-search-form-wrap">
-                <input
-                  type="text"
-                  name="search"
-                  class="hero-search-input"
-                  placeholder="Search..."
-                />
-                <button type="submit" class="hero-search-btn">
-                  <svg width="16" height="16" class="hero-search-icon">
-                    <use href="images/sprite.svg#search-icon"></use>
-                  </svg>
-                </button>
-              </div>
-            </form>
-
-            <button type="button" class="hero-btn">Shop Now</button>
-          </div>
-          <!-- Slider main container -->
-          <div class="swiper mySwiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <img
-                  src="images/cosmetic-set.webp"
-                  alt="cosmetic-set"
-                  class="slide-img"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/cosmetic-set.webp"
-                  alt="cosmetic-set"
-                  class="slide-img"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/cosmetic-set.webp"
-                  alt="cosmetic-set"
-                  class="slide-img"
-                />
-              </div>
+          <form class="hero-search-form">
+            <div class="hero-search-form-wrap">
+              <input
+                type="text"
+                name="search"
+                class="hero-search-input"
+                placeholder="Search..."
+              />
+              <button type="submit" class="hero-search-btn">
+                <svg width="16" height="16" class="hero-search-icon">
+                  <use href="images/sprite.svg#search-icon"></use>
+                </svg>
+              </button>
             </div>
-            <!-- <div class="swiper-btn-container">
+          </form>
+
+          <button type="button" class="hero-btn">Shop Now</button>
+
+          <!-- Slider main container -->
+          <!-- <div class="swiper mySwiper"> -->
+          <!-- Additional required wrapper -->
+          <!-- <div class="swiper-wrapper"> -->
+          <!-- Slides -->
+          <!-- <div class="swiper-slide">
+                <img
+                  src="images/cosmetic-set.webp"
+                  alt="cosmetic-set"
+                  class="slide-img"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="images/cosmetic-set.webp"
+                  alt="cosmetic-set"
+                  class="slide-img"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="images/cosmetic-set.webp"
+                  alt="cosmetic-set"
+                  class="slide-img"
+                />
+              </div>
+            </div> -->
+          <!-- <div class="swiper-btn-container">
               <div class="btn-prev">
                 <svg width="50" height="50" class="hero-slider-icon">
                   <use href="images/sprite.svg#icon-arrow-left-icon"></use>
@@ -143,12 +142,24 @@
           <!-- <div class="hero-container"></div> -->
         </div>
       </section>
+      <section class="investors">
+        <div class="container">
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer></footer>
     <!-- Swiper js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
     <!-- Initialize swiper -->
-    <script>
+    <!-- <script>
       const swiper = new Swiper('.mySwiper', {
         slidesPerViwe: 1,
         spaceBetween: 10,
@@ -161,7 +172,7 @@
           prevEl: '.btn-prev',
         },
       });
-    </script>
+    </script> -->
     <!-- Visual in console input submit -->
     <script>
       (() => {

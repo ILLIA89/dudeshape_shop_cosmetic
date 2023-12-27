@@ -1,3 +1,16 @@
 .investors {
+  margin-top: 20px;
   outline: 1px solid green;
+  padding: 133px 0 130px 0;
+}
+
+.investors-list {
+  outline: 1px solid green;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.investor-item {
+  //   display: flex;
 }

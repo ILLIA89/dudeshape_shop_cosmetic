@@ -165,15 +165,7 @@ body {
   padding: 47px 0 102px 0;
   margin: 0 auto;
 }
-
-.hero-wrap {
-  background-color: #F9F6F5;
-  background-image: url(../images/cosmetic-set.webp);
-  background-repeat: no-repeat;
-  background-position: 100%;
-}
-
-.hero-title {
+.hero .hero-title {
   color: #000000;
   max-width: 621px;
   margin-bottom: 30px;
@@ -181,16 +173,14 @@ body {
   line-height: 1.25;
   font-weight: 500;
 }
-
-.hero-text {
+.hero .hero-text {
   color: #555555;
   max-width: 516px;
   margin-left: 0;
   margin-bottom: 30px;
   line-height: 1.6;
 }
-
-.hero-btn {
+.hero .hero-btn {
   display: inline-block;
   padding: 16px 32px;
   border: none;
@@ -201,9 +191,16 @@ body {
   font-weight: 500;
   line-height: 1.3;
 }
-.hero-btn:hover, .hero-btn:focus {
+.hero .hero-btn:hover, .hero .hero-btn:focus {
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.hero-wrap {
+  background-color: #F9F6F5;
+  background-image: url(../images/cosmetic-set.webp);
+  background-repeat: no-repeat;
+  background-position: 100%;
 }
 
 .hero-search-form {
@@ -283,4 +280,23 @@ body {
 }
 .hero-search-form .hero-search-icon {
   fill: #fff;
+}
+
+.investors {
+  outline: 1px solid green;
+  padding: 133px 0 130px 0;
+}
+
+.investors-list {
+  outline: 1px solid red;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 15px;
 }/*# sourceMappingURL=main.css.map */

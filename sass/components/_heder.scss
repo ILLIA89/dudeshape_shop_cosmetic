@@ -1,66 +1,67 @@
-.page-header{
-    background:$bgHeaderHeroColor;
-    padding-top: 43px;
-    padding-bottom: 64px;
+.page-header {
+  background: $bgHeaderHeroColor;
+  //   padding-top: 43px;
+  //   padding-bottom: 64px;
+  // outline: 2px solid green;
+  .nav {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: baseline;
     // outline: 2px solid green;
-    .nav {
-            display: flex;
-            margin: auto;
-            justify-content: space-between;
-            align-items: baseline;
-            // outline: 2px solid green;
-        }
+  }
 }
 
-.nav-menu{
-    display: flex;
-    gap: 40px;
-    // outline: 2px solid green;
-    .nav-link{
-        display: block;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.25;
-        color: $logoTitleColor;
+.nav-menu {
+  display: flex;
+  gap: 40px;
+  // outline: 2px solid green;
+  .nav-link {
+    display: block;
+    padding-top: 44px;
+    padding-bottom: 17px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: $logoTitleColor;
 
-        &:hover,
-        &:focus{
-            color: $textColor;
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        }
+    &:hover,
+    &:focus {
+      color: $textColor;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
-
+  }
 }
 
 //Button navigation//
 
-.nav-btn-list{
-display: flex;
-// outline: 2px solid green;
-gap: 10px;
+.nav-btn-list {
+  display: flex;
+  // outline: 2px solid green;
+  gap: 10px;
 
-.nav-btn{
-background-color: transparent;
-border: none;
+  .nav-btn {
+    background-color: transparent;
+    border: none;
 
-.nav-btn-icon{
-    stroke: $logoTitleColor;
-&:hover,
-&:focus {
+    .nav-btn-icon {
+      stroke: $logoTitleColor;
+      &:hover,
+      &:focus {
         stroke: $textColor;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      }
     }
-}
 
-.custom-burg-icon{
-    stroke: none;
-    fill:$logoTitleColor;
-    &:hover,
-    &:focus {
-            stroke: none;
-            fill: $textColor;
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        }
-}
-}
+    .custom-burg-icon {
+      stroke: none;
+      fill: $logoTitleColor;
+      &:hover,
+      &:focus {
+        stroke: none;
+        fill: $textColor;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      }
+    }
+  }
 }

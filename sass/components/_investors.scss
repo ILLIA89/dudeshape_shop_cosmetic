@@ -5,17 +5,22 @@
 }
 
 .investors-list {
-  outline: 1px solid red;
-  margin: 0;
-  padding: 0;
   display: flex;
-  flex-direction: row;
-  // justify-content: center;
-  gap: 15px;
-}
+  justify-content: center;
 
-// .investor-item {
-//   margin: 0;
-//   padding: 0;
-//   display: flex;
-// }
+  outline: 1px solid aqua;
+
+  .investor-item {
+    margin-right: 120px;
+
+    outline: 1px solid red;
+  }
+
+  .investor-item:nth-child(6n) {
+    margin-right: 0;
+  }
+
+  .investor-link {
+    display: block;
+  }
+}

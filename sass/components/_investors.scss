@@ -6,11 +6,19 @@
 
 .investors-list {
   display: flex;
-  justify-content: center;
+  //погратись
+  justify-content: space-between;
+  padding-top: 43px;
+  padding-bottom: 43px;
 
   outline: 1px solid aqua;
 
+  // .investors-list::before {
+  //   border-top: 1px solid green;
+  // }
+
   .investor-item {
+    display: flex;
     margin-right: 120px;
 
     outline: 1px solid red;
@@ -21,6 +29,13 @@
   }
 
   .investor-link {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: $textColor;
+  }
+  .investor-icon {
+    fill: currentColor;
   }
 }

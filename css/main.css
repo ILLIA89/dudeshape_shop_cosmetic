@@ -97,6 +97,7 @@ body {
 
 .page-header {
   background: #F9F6F5;
+  padding-bottom: 64px;
 }
 .page-header .nav {
   display: -webkit-box;
@@ -283,29 +284,30 @@ body {
 }
 
 .investors {
-  outline: 1px solid green;
   padding: 133px 0 130px 0;
+}
+
+.custom-box {
+  margin: 0 32px;
 }
 
 .investors-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 43px;
   padding-bottom: 43px;
-  outline: 1px solid aqua;
+  border-bottom: 1px solid #EEEEEE;
+  border-top: 1px solid #EEEEEE;
 }
 .investors-list .investor-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: calc((100% - 600px) / 6);
   margin-right: 120px;
-  outline: 1px solid red;
 }
-.investors-list .investor-item:nth-child(6n) {
+.investors-list .investor-item:last-child {
   margin-right: 0;
 }
 .investors-list .investor-link {
@@ -319,6 +321,11 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   color: #555555;
+}
+.investors-list .investor-link:hover, .investors-list .investor-link:focus {
+  fill: #555555;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .investors-list .investor-icon {
   fill: currentColor;

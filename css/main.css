@@ -163,6 +163,7 @@ body {
 
 .hero {
   max-width: 1440px;
+  background: #F9F6F5;
   padding: 47px 0 102px 0;
   margin: 0 auto;
 }
@@ -198,7 +199,6 @@ body {
 }
 
 .hero-wrap {
-  background-color: #F9F6F5;
   background-image: url(../images/cosmetic-set.webp);
   background-repeat: no-repeat;
   background-position: 100%;

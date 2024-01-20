@@ -1,6 +1,7 @@
 .hero {
   max-width: 1440px;
   // outline: 1px solid green;
+  background: $bgHeaderHeroColor;
   padding: 47px 0 102px 0;
   margin: 0 auto;
 
@@ -40,7 +41,6 @@
 
 .hero-wrap {
   // outline: 1px solid red;
-  background-color: $bgHeaderHeroColor;
   background-image: url(../images/cosmetic-set.webp);
   background-repeat: no-repeat;
   background-position: 100%;

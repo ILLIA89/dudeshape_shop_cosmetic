@@ -50,7 +50,7 @@ img {
   margin: 0;
 }
 
-.product-text, .hero .hero-text {
+.product-text-box .product-text, .hero .hero-text {
   color: #555555;
   line-height: 1.6;
 }
@@ -334,4 +334,33 @@ body {
 }
 .investors-list .investor-icon {
   fill: currentColor;
+}
+
+.product-title {
+  margin-bottom: 20px;
+}
+
+.product-text-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 60px;
+}
+.product-text-box .product-text {
+  max-width: 714px;
+}
+.product-text-box .product-link::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-image: url("/images/sprite.svg#frame-icon");
+  background-size: 100% 100%;
+  background-position: -16px -16px;
+}
+.product-text-box .product-link::after #frame-icon {
+  fill: black;
 }/*# sourceMappingURL=main.css.map */

@@ -50,6 +50,18 @@ img {
   margin: 0;
 }
 
+.product-text, .hero .hero-text {
+  color: #555555;
+  line-height: 1.6;
+}
+
+.product-title, .hero .hero-title {
+  font-size: 56px;
+  line-height: 1.25;
+  font-weight: 500;
+  color: #000000;
+}
+
 .container {
   width: 100%;
   max-width: 1264px;
@@ -62,7 +74,6 @@ body {
   background: #fff;
   font-family: "Red Hat Display", sans-serif;
   font-size: 20px;
-  font-style: normal;
   font-weight: 400;
 }
 
@@ -168,19 +179,13 @@ body {
   margin: 0 auto;
 }
 .hero .hero-title {
-  color: #000000;
   max-width: 621px;
   margin-bottom: 30px;
-  font-size: 56px;
-  line-height: 1.25;
-  font-weight: 500;
 }
 .hero .hero-text {
-  color: #555555;
   max-width: 516px;
   margin-left: 0;
   margin-bottom: 30px;
-  line-height: 1.6;
 }
 .hero .hero-btn {
   display: inline-block;

@@ -6,20 +6,16 @@
   margin: 0 auto;
 
   .hero-title {
-    color: $mainHeadColor;
+    @extend %title;
     max-width: 621px;
     margin-bottom: 30px;
-    font-size: 56px;
-    line-height: 1.25;
-    font-weight: 500;
   }
 
   .hero-text {
-    color: $textColor;
+    @extend %text;
     max-width: 516px;
     margin-left: 0;
     margin-bottom: 30px;
-    line-height: 1.6;
   }
 
   .hero-btn {

@@ -1,0 +1,20 @@
+.product-card-box {
+  padding: 20px 0 32px 0;
+  max-width: 600px;
+}
+
+.product-card-container {
+  padding: 0 32px;
+
+  .product-title-card {
+    margin-bottom: 16px;
+  }
+
+  .product-text {
+    margin-bottom: 48px;
+  }
+}
+
+.product-box-footer {
+  display: flex;
+}

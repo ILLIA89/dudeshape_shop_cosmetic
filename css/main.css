@@ -107,7 +107,7 @@ body {
 }
 
 .page-header {
-  background: #F9F6F5;
+  background: #f9f6f5;
   padding-bottom: 64px;
 }
 .page-header .nav {
@@ -174,7 +174,7 @@ body {
 
 .hero {
   max-width: 1440px;
-  background: #F9F6F5;
+  background: #f9f6f5;
   padding: 47px 0 102px 0;
   margin: 0 auto;
 }
@@ -191,7 +191,7 @@ body {
   display: inline-block;
   padding: 16px 32px;
   border: none;
-  background: #402F2C;
+  background: #402f2c;
   min-width: 148px;
   color: #fff;
   font-size: 18px;
@@ -266,7 +266,7 @@ body {
   letter-spacing: 1.4;
 }
 .hero-search-form .hero-search-input:focus {
-  border: 2px solid #402F2C;
+  border: 2px solid #402f2c;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
@@ -277,7 +277,7 @@ body {
   padding: 8px;
   width: 32px;
   height: 32px;
-  background: #402F2C;
+  background: #402f2c;
   border: none;
 }
 .hero-search-form .hero-search-btn:focus {
@@ -305,8 +305,8 @@ body {
           justify-content: center;
   padding-top: 43px;
   padding-bottom: 43px;
-  border-bottom: 1px solid #EEEEEE;
-  border-top: 1px solid #EEEEEE;
+  border-bottom: 1px solid #eeeeee;
+  border-top: 1px solid #eeeeee;
 }
 .investors-list .investor-item {
   width: calc((100% - 600px) / 6);
@@ -364,6 +364,10 @@ body {
   font-weight: 500;
   font-size: 24px;
 }
+.product-text-box .product-frame-wrap .product-link:hover, .product-text-box .product-frame-wrap .product-link:focus {
+  color: #555555;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 .product-text-box .product-frame-wrap .product-frame-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -372,4 +376,33 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-left: 8px;
+}
+.product-text-box .product-frame-wrap .product-frame {
+  fill: #222222;
+}
+.product-text-box .product-frame-wrap .product-frame:hover, .product-text-box .product-frame-wrap .product-frame:focus {
+  fill: #555555;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.product-card-box {
+  padding: 20px 0 32px 0;
+  max-width: 600px;
+}
+
+.product-card-container {
+  padding: 0 32px;
+}
+.product-card-container .product-title-card {
+  margin-bottom: 16px;
+}
+.product-card-container .product-text {
+  margin-bottom: 48px;
+}
+
+.product-box-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }/*# sourceMappingURL=main.css.map */

@@ -352,15 +352,24 @@ body {
 .product-text-box .product-text {
   max-width: 714px;
 }
-.product-text-box .product-link::after {
-  content: "";
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-  background-image: url("/images/sprite.svg#frame-icon");
-  background-size: 100% 100%;
-  background-position: -16px -16px;
+.product-text-box .product-frame-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
 }
-.product-text-box .product-link::after #frame-icon {
-  fill: black;
+.product-text-box .product-frame-wrap .product-link {
+  color: #222222;
+  font-weight: 500;
+  font-size: 24px;
+}
+.product-text-box .product-frame-wrap .product-frame-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 8px;
 }/*# sourceMappingURL=main.css.map */

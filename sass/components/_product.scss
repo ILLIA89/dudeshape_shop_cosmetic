@@ -12,19 +12,20 @@
     @extend %text;
     max-width: 714px;
   }
+  .product-frame-wrap {
+    display: flex;
+    align-self: baseline;
 
-  .product-link {
-    &::after {
-      content: '';
-      width: 24px;
-      height: 24px;
-      display: inline-block;
-      background-image: url('/images/sprite.svg#frame-icon');
-      background-size: 100% 100%;
-      background-position: -16px -16px;
-      #frame-icon {
-        fill: black;
-      }
+    .product-link {
+      color: $logoTitleColor;
+      font-weight: 500;
+      font-size: 24px;
+    }
+
+    .product-frame-link {
+      display: flex;
+      align-items: center;
+      margin-left: 8px;
     }
   }
 }

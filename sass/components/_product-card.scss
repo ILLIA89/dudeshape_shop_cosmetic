@@ -7,14 +7,49 @@
   padding: 0 32px;
 
   .product-title-card {
+    @extend %title-card;
     margin-bottom: 16px;
   }
 
   .product-text {
+    @extend %text;
     margin-bottom: 48px;
+  }
+
+  .box-price {
+    @extend %price-style;
   }
 }
 
 .product-box-footer {
   display: flex;
+
+  .btn-buy {
+    @extend %btn-style;
+    margin-right: 24px;
+    min-width: 137px;
+    border: 1px solid rgba(104, 90, 82, 0.46);
+    background: $btnTitleBgColor;
+    color: $bodyButtonFormColor;
+
+    &:hover,
+    &:focus {
+      @extend %btn-hover-focus;
+    }
+  }
+
+  .btn-add {
+    @extend %btn-style;
+    min-width: 162px;
+    border: 1px solid rgba(104, 90, 82, 0.46);
+    background: $bodyButtonFormColor;
+    color: $btnTitleBgColor;
+    &:hover,
+    &:focus {
+      border: 1px solid rgba(104, 90, 82, 0.46);
+      background: $btnTitleBgColor;
+      color: $bodyButtonFormColor;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+  }
 }

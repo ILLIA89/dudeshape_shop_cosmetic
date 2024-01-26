@@ -20,7 +20,7 @@
     margin-right: 120px;
   }
 
-  .investor-item:last-child {
+  .investor-item:nth-child(6n) {
     margin-right: 0;
   }
 

@@ -1,5 +1,14 @@
 .product-list {
   display: flex;
+
+  .product-card {
+    width: calc((100% - 40px) / 2);
+    margin-right: 40px;
+  }
+
+  .product-card:nth-child(2n) {
+    margin-right: 0;
+  }
 }
 
 .product-card-container {
@@ -7,6 +16,11 @@
   border-bottom: 1px solid rgba(104, 90, 82, 0.19);
   border-right: 1px solid rgba(104, 90, 82, 0.19);
   border-left: 1px solid rgba(104, 90, 82, 0.19);
+
+  .product-img {
+    width: 100%;
+    object-fit: cover;
+  }
 
   .product-title-card {
     @extend %title-card;
@@ -27,7 +41,7 @@
 .product-box-footer {
   display: flex;
   align-items: center;
-  max-width: 60px;
+
   .btn-buy {
     @extend %btn-style;
     margin-right: 24px;

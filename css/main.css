@@ -290,7 +290,7 @@ body {
   width: calc((100% - 600px) / 6);
   margin-right: 120px;
 }
-.investors-list .investor-item:last-child {
+.investors-list .investor-item:nth-child(6n) {
   margin-right: 0;
 }
 .investors-list .investor-link {
@@ -369,12 +369,24 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+.product-list .product-card {
+  width: calc((100% - 40px) / 2);
+  margin-right: 40px;
+}
+.product-list .product-card:nth-child(2n) {
+  margin-right: 0;
+}
 
 .product-card-container {
   padding: 20px 32px 32px 32px;
   border-bottom: 1px solid rgba(104, 90, 82, 0.19);
   border-right: 1px solid rgba(104, 90, 82, 0.19);
   border-left: 1px solid rgba(104, 90, 82, 0.19);
+}
+.product-card-container .product-img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .product-card-container .product-title-card {
   margin-bottom: 16px;
@@ -393,7 +405,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 60px;
 }
 .product-box-footer .btn-buy {
   margin-right: 24px;

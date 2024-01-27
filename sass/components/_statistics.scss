@@ -9,12 +9,32 @@
   justify-content: center;
   gap: 321px;
 
+  .statistics-item {
+    padding: 0;
+  }
+
   .statistics-number {
+    position: relative;
     text-align: center;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.25;
+    color: $logoTitleColor;
+
+    // padding: 0 0 15px 0;
     margin-bottom: 48px;
+    // border-bottom: 3px solid $logoTitleColor;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -15px;
+      min-width: 100%;
+      height: 3px;
+      background-color: $logoTitleColor;
+    }
   }
 
   .statistics-text {

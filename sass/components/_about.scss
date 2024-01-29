@@ -1,0 +1,26 @@
+.about {
+  padding: 130px 0 130px 0;
+
+  .about-wrap {
+    display: flex;
+    gap: 32px;
+  }
+
+  .about-title {
+    @extend %title;
+    max-width: 520px;
+    margin-bottom: 20px;
+  }
+
+  //   .about-text-first,
+  //   .about-text-last {
+  //     @extend %text;
+  //     max-width: 608px;
+  //     margin-bottom: 20px;
+  //   }
+
+  .about-img {
+    width: 600px;
+    object-fit: cover;
+  }
+}

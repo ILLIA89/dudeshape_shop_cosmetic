@@ -32,13 +32,8 @@
     line-height: 1.25;
     color: $logoTitleColor;
 
-    // padding: 0 0 15px 0;
-    // margin-bottom: 48px;
-    // border-bottom: 3px solid $logoTitleColor;
-
     &::after {
       content: '';
-      // display: block;
       position: absolute;
       left: 0;
       right: 0;
@@ -51,8 +46,6 @@
 
   .statistics-text {
     display: inline-block;
-    // margin-top: 48px;
-    // text-align: center;
     font-size: 24px;
     line-height: 1.25;
     color: $textColor;

@@ -21,7 +21,6 @@
   .hero-btn {
     @extend %btn-style;
     min-width: 148px;
-    border: 1px solid rgba(104, 90, 82, 0.46);
     background: $btnTitleBgColor;
     color: $bodyButtonFormColor;
 

@@ -12,12 +12,28 @@
     margin-bottom: 20px;
   }
 
-  //   .about-text-first,
-  //   .about-text-last {
-  //     @extend %text;
-  //     max-width: 608px;
-  //     margin-bottom: 20px;
-  //   }
+  .about-text-first,
+  .about-text-last {
+    @extend %text;
+    max-width: 608px;
+    margin-bottom: 20px;
+  }
+
+  .about-text-last {
+    margin-bottom: 50px;
+  }
+
+  .about-btn {
+    @extend %btn-style;
+    min-width: 148px;
+    background: $btnTitleBgColor;
+    color: $bodyButtonFormColor;
+
+    &:hover,
+    &:focus {
+      @extend %btn-hover-focus;
+    }
+  }
 
   .about-img {
     width: 600px;

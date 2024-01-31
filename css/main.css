@@ -550,6 +550,13 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 32px;
+  margin-bottom: 130px;
+}
+.about .about-wrap:last-child {
+  margin-bottom: 0;
+}
+.about .about-box {
+  padding: 45px 0 45px 0;
 }
 .about .about-title {
   max-width: 520px;
@@ -569,7 +576,14 @@ body {
   color: #fff;
 }
 .about .about-img {
-  width: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about .feedback-box {
+  padding: 30px 0 70px 0;
+}
+.about .feedback-img {
   -o-object-fit: cover;
      object-fit: cover;
 }/*# sourceMappingURL=main.css.map */

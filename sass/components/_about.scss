@@ -4,6 +4,15 @@
   .about-wrap {
     display: flex;
     gap: 32px;
+    margin-bottom: 130px;
+  }
+
+  .about-wrap:last-child {
+    margin-bottom: 0;
+  }
+
+  .about-box {
+    padding: 45px 0 45px 0;
   }
 
   .about-title {
@@ -36,7 +45,6 @@
   }
 
   .about-img {
-    width: 600px;
     object-fit: cover;
   }
 }

@@ -608,5 +608,25 @@ body {
   margin-right: 0;
 }
 .about .feedback-text {
+  position: relative;
   max-width: 608px;
+  margin-bottom: 79px;
+}
+.about .feedback-text .feedback-decor-begin {
+  position: absolute;
+  top: 1px;
+  left: -17px;
+  fill: #6fb587;
+}
+.about .feedback-text .feedback-decor-end {
+  position: absolute;
+  top: 99px;
+  left: 419px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  fill: #6fb587;
+}
+.about .feedback-position {
+  color: #222222;
+  line-height: 1.2;
 }/*# sourceMappingURL=main.css.map */

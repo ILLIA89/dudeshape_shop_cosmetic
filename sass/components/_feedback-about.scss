@@ -26,6 +26,35 @@
 
   .feedback-text {
     @extend %text;
+    // text-indent: -22px;
+    position: relative;
     max-width: 608px;
+    margin-bottom: 79px;
+
+    .feedback-decor-begin {
+      position: absolute;
+      top: 1px;
+      left: -17px;
+
+      fill: $elementsColor;
+    }
+
+    .feedback-decor-end {
+      position: absolute;
+      top: 99px;
+      left: 419px;
+      transform: scaleX(-1);
+
+      fill: $elementsColor;
+    }
+  }
+
+  .feedback-title {
+    @extend %title-feedback;
+  }
+
+  .feedback-position {
+    color: $logoTitleColor;
+    line-height: 1.2;
   }
 }

@@ -597,16 +597,6 @@ body {
 .about .feedback-title {
   margin-bottom: 12px;
 }
-.about .feedback-stars {
-  margin-bottom: 43px;
-}
-.about .feedback-stars .stars-icon {
-  margin-right: 12px;
-  fill: #ffc046;
-}
-.about .feedback-stars .stars-icon:last-child {
-  margin-right: 0;
-}
 .about .feedback-text {
   position: relative;
   max-width: 608px;
@@ -629,4 +619,15 @@ body {
 .about .feedback-position {
   color: #222222;
   line-height: 1.2;
+}
+
+.feedback-stars {
+  margin-bottom: 43px;
+}
+.feedback-stars .stars-icon {
+  margin-right: 12px;
+  fill: #ffc046;
+}
+.feedback-stars .stars-icon:last-child {
+  margin-right: 0;
 }/*# sourceMappingURL=main.css.map */

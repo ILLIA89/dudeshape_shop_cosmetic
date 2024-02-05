@@ -12,18 +12,6 @@
     margin-bottom: 12px;
   }
 
-  .feedback-stars {
-    margin-bottom: 43px;
-
-    .stars-icon {
-      margin-right: 12px;
-      fill: $ratingStarsColor;
-    }
-    .stars-icon:last-child {
-      margin-right: 0;
-    }
-  }
-
   .feedback-text {
     @extend %text;
     // text-indent: -22px;
@@ -56,5 +44,17 @@
   .feedback-position {
     color: $logoTitleColor;
     line-height: 1.2;
+  }
+}
+
+.feedback-stars {
+  margin-bottom: 43px;
+
+  .stars-icon {
+    margin-right: 12px;
+    fill: $ratingStarsColor;
+  }
+  .stars-icon:last-child {
+    margin-right: 0;
   }
 }

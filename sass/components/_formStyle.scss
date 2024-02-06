@@ -1,6 +1,9 @@
+//......HERO-INPUT....... //
+
 .hero-search-form {
   max-width: 326px;
   margin-bottom: 60px;
+
   .hero-search-form-wrap {
     position: relative;
     display: inline-block;
@@ -52,3 +55,54 @@
 }
 
 //......FOOTER-INPUT....... //
+
+.footer-form {
+  .footer-form-wrap {
+    position: relative;
+    display: inline-block;
+  }
+
+  .footer-input {
+    color: $heroFormTextColor;
+    font-family: Red Hat Display;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1.3;
+    padding: 14px 48px 14px 16px;
+    width: 386px;
+    height: 56px;
+    outline: none;
+    border: none;
+    background: $bodyButtonFormColor;
+
+    &::placeholder {
+      color: $textColor;
+      font-family: Red Hat Display;
+      font-weight: 400;
+      font-size: 16px;
+      letter-spacing: 1.3;
+    }
+
+    &:focus {
+      border: 2px solid $btnTitleBgColor;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  .footer-subscribe-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: block;
+    width: 103px;
+    height: 40px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    padding: 10px 20px;
+    color: $bodyButtonFormColor;
+    background-color: $btnTitleBgColor;
+    border: 1px solid rgba(104, 90, 82, 0.46);
+  }
+}

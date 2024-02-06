@@ -63,34 +63,40 @@
 }
 
 //Buttons-slide///
-// .feedback-slider {
-//   display: flex;
-//   gap: 20px;
+.feedback-slider {
+  display: flex;
+  gap: 20px;
 
-//   .feedback-btn {
-//     // position: relative;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     padding: 8px;
-//     width: 32px;
-//     height: 32px;
-//     border-radius: 100%;
-//     border: 1px solid $feedbackBtn;
-//     background-color: $bodyButtonFormColor;
+  .feedback-btn {
+    // position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    border: 1px solid rgba(111, 181, 135, 0.15);
+    background-color: $bodyButtonFormColor;
 
-//     &:hover,
-//     &:focus {
-//       border-color: $elementsColor;
+    .feedback-btn-icon {
+      stroke: rgba(111, 181, 135, 0.15);
+    }
 
-//       .feedback-btn-icon {
-//         stroke: $feedbackBtn;
-//         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-//       }
-//     }
-//   }
-// }
+    &:hover,
+    &:focus {
+      border-color: $elementsColor;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 
-// .feedback-btn:first-child {
-//   transform: scaleX(-1);
-// }
+      .feedback-btn-icon {
+        stroke: $elementsColor;
+        // box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      }
+    }
+  }
+}
+
+.feedback-btn:first-child {
+  transform: scaleX(-1);
+}

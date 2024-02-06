@@ -14,10 +14,11 @@
 
   .feedback-text {
     @extend %text;
-    // text-indent: -22px;
     position: relative;
     max-width: 608px;
     margin-bottom: 79px;
+
+    // Decor of the text
 
     .feedback-decor-begin {
       position: absolute;
@@ -42,11 +43,13 @@
   }
 
   .feedback-position {
-    color: $logoTitleColor;
+    margin-bottom: 22px;
     line-height: 1.2;
+    color: $logoTitleColor;
   }
 }
 
+// Stars////
 .feedback-stars {
   margin-bottom: 43px;
 
@@ -57,4 +60,37 @@
   .stars-icon:last-child {
     margin-right: 0;
   }
+}
+
+//Buttons-slide///
+.feedback-slider {
+  display: flex;
+  gap: 20px;
+
+  .feedback-btn {
+    // position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    border: 1px solid $feedbackBtn;
+    background-color: $bodyButtonFormColor;
+
+    &:hover,
+    &:focus {
+      border-color: $elementsColor;
+
+      .feedback-btn-icon {
+        stroke: $feedbackBtn;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      }
+    }
+  }
+}
+
+.feedback-btn:first-child {
+  transform: scaleX(-1);
 }

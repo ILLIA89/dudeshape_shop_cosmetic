@@ -617,8 +617,9 @@ body {
   fill: #6fb587;
 }
 .about .feedback-position {
-  color: #222222;
+  margin-bottom: 22px;
   line-height: 1.2;
+  color: #222222;
 }
 
 .feedback-stars {
@@ -630,4 +631,45 @@ body {
 }
 .feedback-stars .stars-icon:last-child {
   margin-right: 0;
+}
+
+.feedback-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.feedback-slider .feedback-btn {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  border: 1px solid rgba(111, 181, 135, 0.15);
+  background-color: #fff;
+}
+.feedback-slider .feedback-btn .feedback-btn-icon {
+  stroke: rgba(111, 181, 135, 0.15);
+}
+.feedback-slider .feedback-btn:hover, .feedback-slider .feedback-btn:focus {
+  border-color: #6fb587;
+  -webkit-box-shadow: rgba(111, 181, 135, 0.15);
+          box-shadow: rgba(111, 181, 135, 0.15);
+}
+.feedback-slider .feedback-btn:hover .feedback-btn-icon, .feedback-slider .feedback-btn:focus .feedback-btn-icon {
+  stroke: #6fb587;
+}
+
+.feedback-btn:first-child {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }/*# sourceMappingURL=main.css.map */

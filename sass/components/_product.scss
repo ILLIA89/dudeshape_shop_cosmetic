@@ -16,34 +16,26 @@
     max-width: 714px;
   }
 
-  .product-frame-wrap {
+  .product-link {
     display: flex;
     align-self: baseline;
+  }
 
-    .product-link {
-      color: $logoTitleColor;
-      font-weight: 500;
-      font-size: 24px;
+  .product-frame {
+    margin-left: 8px;
+  }
 
-      &:hover,
-      &:focus {
-        color: $textColor;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      }
-    }
+  .product-link,
+  .product-frame {
+    font-weight: 500;
+    font-size: 24px;
+    color: $logoTitleColor;
 
-    .product-frame-link {
-      display: flex;
-      align-items: center;
-      margin-left: 8px;
-    }
-    .product-frame {
-      fill: $logoTitleColor;
-      &:hover,
-      &:focus {
-        fill: $textColor;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-      }
+    &:hover,
+    &:focus {
+      color: $textColor;
+      fill: $textColor;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
   }
 }

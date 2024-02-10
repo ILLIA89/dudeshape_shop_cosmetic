@@ -749,6 +749,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 103px 0 59px 0;
+  border-bottom: 1px solid #ddd;
 }
 .footer .footer-subscribe .footer-form-title {
   max-width: 558px;

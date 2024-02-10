@@ -428,15 +428,12 @@ body {
   display: flex;
   -ms-flex-item-align: baseline;
       align-self: baseline;
-}
-.product-text-box .product-frame {
-  margin-left: 8px;
-}
-.product-text-box .product-link,
-.product-text-box .product-frame {
   font-weight: 500;
   font-size: 24px;
   color: #222222;
+}
+.product-text-box .product-frame {
+  margin-left: 8px;
 }
 .product-text-box .product-link:hover, .product-text-box .product-link:focus,
 .product-text-box .product-frame:hover,

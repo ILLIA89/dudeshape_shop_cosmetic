@@ -19,18 +19,18 @@
   .product-link {
     display: flex;
     align-self: baseline;
+    font-weight: 500;
+    font-size: 24px;
+    color: $logoTitleColor;
   }
 
   .product-frame {
     margin-left: 8px;
+    // не впевнений, початковий fill:
   }
 
   .product-link,
   .product-frame {
-    font-weight: 500;
-    font-size: 24px;
-    color: $logoTitleColor;
-
     &:hover,
     &:focus {
       color: $textColor;

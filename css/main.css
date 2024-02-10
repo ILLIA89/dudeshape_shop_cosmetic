@@ -94,6 +94,10 @@ body {
   background-color: #555555;
 }
 
+.footer-logo > .logo {
+  font-size: 40px;
+}
+
 .page-header {
   background-color: #f9f6f5;
   padding-bottom: 64px;

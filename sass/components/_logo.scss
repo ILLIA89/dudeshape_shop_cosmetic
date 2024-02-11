@@ -36,7 +36,9 @@
 // FOOTER
 
 .footer-logo > .logo {
-  margin-bottom: 38px;
+  // display: inline;
+  // margin: 0;
+  // margin-bottom: 38px;
   font-size: 40px;
 }
 
@@ -44,5 +46,4 @@
   font-size: 18px;
   line-height: 1.8;
   color: $textColor;
-  max-width: 326px;
 }

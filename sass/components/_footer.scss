@@ -23,6 +23,11 @@
     padding: 59px 0 52px 0;
   }
 
+  .footer-logo {
+    margin-right: 212px;
+    max-width: 326px;
+  }
+
   .footer-title {
     @extend %title-footer;
     margin-bottom: 39px;

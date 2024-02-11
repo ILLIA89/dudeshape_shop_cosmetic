@@ -96,7 +96,6 @@ body {
 }
 
 .footer-logo > .logo {
-  margin-bottom: 38px;
   font-size: 40px;
 }
 
@@ -104,7 +103,6 @@ body {
   font-size: 18px;
   line-height: 1.8;
   color: #555555;
-  max-width: 326px;
 }
 
 .page-header {
@@ -785,6 +783,10 @@ body {
       -ms-flex-align: baseline;
           align-items: baseline;
   padding: 59px 0 52px 0;
+}
+.footer .footer-logo {
+  margin-right: 212px;
+  max-width: 326px;
 }
 .footer .footer-title {
   margin-bottom: 39px;

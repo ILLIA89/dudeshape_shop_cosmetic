@@ -1,13 +1,11 @@
 .page-header {
   background-color: $bgHeaderHeroColor;
-  //   padding-top: 43px;
+  padding-top: 43px;
   padding-bottom: 64px;
   // outline: 2px solid green;
   .nav {
     display: flex;
-    margin: auto;
-    justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     // outline: 2px solid green;
   }
 }
@@ -15,12 +13,12 @@
 .nav-menu {
   display: flex;
   gap: 40px;
+  margin-right: 312px;
   // outline: 2px solid green;
 }
 
 .nav-link {
-  display: block;
-  padding-top: 44px;
+  align-items: center;
   padding-bottom: 17px;
   font-size: 16px;
   font-weight: 400;

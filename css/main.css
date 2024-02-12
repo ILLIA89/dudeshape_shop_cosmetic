@@ -130,6 +130,7 @@ body {
 }
 
 .nav-link {
+  display: block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -138,14 +139,16 @@ body {
   font-weight: 400;
   line-height: 1.25;
   color: #222222;
-  -webkit-transition: color 300ms linear;
-  transition: color 300ms linear;
-  -webkit-transition: text-shadow 300ms linear;
-  transition: text-shadow 300ms linear;
 }
 .nav-link:hover, .nav-link:focus {
   color: #555555;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-transition: color, text-shadow, -webkit-transform 300ms linear;
+  transition: color, text-shadow, -webkit-transform 300ms linear;
+  transition: color, text-shadow, transform 300ms linear;
+  transition: color, text-shadow, transform 300ms linear, -webkit-transform 300ms linear;
 }
 
 .nav-btn-list {
@@ -159,18 +162,19 @@ body {
   border: none;
 }
 .nav-btn-list .nav-btn .nav-btn-icon {
+  display: block;
   stroke: #222222;
-  -webkit-transition: stroke 500ms linear;
-  transition: stroke 500ms linear;
-  -webkit-transition: -webkit-filter 500ms linear;
-  transition: -webkit-filter 500ms linear;
-  transition: filter 500ms linear;
-  transition: filter 500ms linear, -webkit-filter 500ms linear;
 }
 .nav-btn-list .nav-btn .nav-btn-icon:hover, .nav-btn-list .nav-btn .nav-btn-icon:focus {
   stroke: #555555;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  -webkit-transition: stroke, -webkit-filter, -webkit-transform 300ms linear;
+  transition: stroke, -webkit-filter, -webkit-transform 300ms linear;
+  transition: stroke, filter, transform 300ms linear;
+  transition: stroke, filter, transform 300ms linear, -webkit-filter, -webkit-transform 300ms linear;
 }
 .nav-btn-list .nav-btn .custom-burg-icon {
   stroke: none;
@@ -403,15 +407,18 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #555555;
-}
-.investors-list .investor-link:hover, .investors-list .investor-link:focus {
   fill: #555555;
+}
+.investors-list .investor-icon:hover, .investors-list .investor-icon:focus {
+  fill: #555555;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-filter, -webkit-transform 300ms linear;
+  transition: -webkit-filter, -webkit-transform 300ms linear;
+  transition: filter, transform 300ms linear;
+  transition: filter, transform 300ms linear, -webkit-filter, -webkit-transform 300ms linear;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-.investors-list .investor-icon {
-  fill: currentColor;
 }
 
 .product {
@@ -454,6 +461,12 @@ body {
   fill: #555555;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: color, fill, -webkit-filter, -webkit-transform 300ms linear;
+  transition: color, fill, -webkit-filter, -webkit-transform 300ms linear;
+  transition: color, fill, filter, transform 300ms linear;
+  transition: color, fill, filter, transform 300ms linear, -webkit-filter, -webkit-transform 300ms linear;
 }
 
 .product-list {
@@ -832,4 +845,20 @@ body {
 .footer .address-list .address-item:hover, .footer .address-list .address-item:focus {
   color: #555555;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 27px;
+}
+.social-list .social-icon {
+  fill: #402f2c;
+}
+.social-list .social-icon:hover, .social-list .social-icon:focus {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }/*# sourceMappingURL=main.css.map */

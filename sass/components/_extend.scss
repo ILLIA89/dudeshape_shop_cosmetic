@@ -56,8 +56,14 @@
 }
 
 %btn-hover-focus {
-  border: 1px solid rgba(104, 90, 82, 0.46);
   color: $btnTitleBgColor;
+  border: 1px solid rgba(104, 90, 82, 0.46);
   background-color: $bodyButtonFormColor;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+%btn-transition {
+  transition: color, border, background-color, box-shadow,
+    transform 400ms linear;
+  transition-duration: 400ms;
 }

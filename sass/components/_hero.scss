@@ -20,6 +20,7 @@
 
   .hero-btn {
     @extend %btn-style;
+    @extend %btn-transition;
     min-width: 148px;
     background: $btnTitleBgColor;
     color: $bodyButtonFormColor;
@@ -27,6 +28,9 @@
     &:hover,
     &:focus {
       @extend %btn-hover-focus;
+
+      transform: scale(1.1);
+      transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
     }
   }
 }

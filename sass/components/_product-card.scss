@@ -44,28 +44,38 @@
 
   .btn-buy {
     @extend %btn-style;
+    @extend %btn-transition;
+
     margin-right: 24px;
     border: 1px solid rgba(104, 90, 82, 0.46);
-    background: $btnTitleBgColor;
+    background-color: $btnTitleBgColor;
     color: $bodyButtonFormColor;
 
     &:hover,
     &:focus {
       @extend %btn-hover-focus;
+
+      transform: scale(1.1);
+      transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
     }
   }
 
   .btn-add {
     @extend %btn-style;
+    @extend %btn-transition;
     border: 1px solid rgba(104, 90, 82, 0.46);
-    background: $bodyButtonFormColor;
+    background-color: $bodyButtonFormColor;
     color: $btnTitleBgColor;
+
     &:hover,
     &:focus {
       border: 1px solid rgba(104, 90, 82, 0.46);
-      background: $btnTitleBgColor;
+      background-color: $btnTitleBgColor;
       color: $bodyButtonFormColor;
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+      transform: scale(1.1);
+      transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
     }
   }
 }

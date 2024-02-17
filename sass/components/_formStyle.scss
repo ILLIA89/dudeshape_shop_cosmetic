@@ -37,20 +37,26 @@
   }
 
   .hero-search-btn {
+    @extend %btn-transition;
     position: absolute;
     top: 8px;
     right: 8px;
     padding: 8px;
     width: 32px;
     height: 32px;
-    background: $btnTitleBgColor;
+    background-color: $btnTitleBgColor;
     border: none;
 
     &:hover,
     &:focus {
       @extend %btn-hover-focus;
+
+      transform: scale(1.1);
+      transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
+
       .hero-search-icon {
         fill: $btnTitleBgColor;
+        // transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
       }
     }
   }
@@ -113,6 +119,7 @@
     &:hover,
     &:focus {
       @extend %btn-hover-focus;
+      @extend %btn-transition;
     }
   }
 }

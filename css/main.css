@@ -139,16 +139,18 @@ body {
   font-weight: 400;
   line-height: 1.25;
   color: #222222;
+  -webkit-transition: color, text-shadow, -webkit-transform 400ms linear;
+  transition: color, text-shadow, -webkit-transform 400ms linear;
+  transition: color, text-shadow, transform 400ms linear;
+  transition: color, text-shadow, transform 400ms linear, -webkit-transform 400ms linear;
 }
 .nav-link:hover, .nav-link:focus {
   color: #555555;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  -webkit-transition: color, text-shadow, -webkit-transform 300ms linear;
-  transition: color, text-shadow, -webkit-transform 300ms linear;
-  transition: color, text-shadow, transform 300ms linear;
-  transition: color, text-shadow, transform 300ms linear, -webkit-transform 300ms linear;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
+          transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
 }
 
 .nav-btn-list {
@@ -213,6 +215,13 @@ body {
   background: #402f2c;
   color: #fff;
 }
+.hero .hero-btn:hover, .hero .hero-btn:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
+          transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
+}
+
 .hero-wrap {
   background-image: url(../images/cosmetic-set.webp);
   background-repeat: no-repeat;
@@ -287,8 +296,14 @@ body {
   padding: 8px;
   width: 32px;
   height: 32px;
-  background: #402f2c;
+  background-color: #402f2c;
   border: none;
+}
+.hero-search-form .hero-search-btn:hover, .hero-search-form .hero-search-btn:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
+          transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
 }
 .hero-search-form .hero-search-btn:hover .hero-search-icon, .hero-search-form .hero-search-btn:focus .hero-search-icon {
   fill: #402f2c;
@@ -407,18 +422,22 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.investors-list .investor-icon {
   fill: #555555;
+  -webkit-transition: fill, -webkit-transform 400ms linear;
+  transition: fill, -webkit-transform 400ms linear;
+  transition: fill, transform 400ms linear;
+  transition: fill, transform 400ms linear, -webkit-transform 400ms linear;
 }
 .investors-list .investor-icon:hover, .investors-list .investor-icon:focus {
   fill: #555555;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: -webkit-filter, -webkit-transform 300ms linear;
-  transition: -webkit-filter, -webkit-transform 300ms linear;
-  transition: filter, transform 300ms linear;
-  transition: filter, transform 300ms linear, -webkit-filter, -webkit-transform 300ms linear;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
+          transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
 }
 
 .product {
@@ -513,20 +532,30 @@ body {
 .product-box-footer .btn-buy {
   margin-right: 24px;
   border: 1px solid rgba(104, 90, 82, 0.46);
-  background: #402f2c;
+  background-color: #402f2c;
   color: #fff;
+}
+.product-box-footer .btn-buy:hover, .product-box-footer .btn-buy:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
+          transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
 }
 .product-box-footer .btn-add {
   border: 1px solid rgba(104, 90, 82, 0.46);
-  background: #fff;
+  background-color: #fff;
   color: #402f2c;
 }
 .product-box-footer .btn-add:hover, .product-box-footer .btn-add:focus {
   border: 1px solid rgba(104, 90, 82, 0.46);
-  background: #402f2c;
+  background-color: #402f2c;
   color: #fff;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
+          transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
 }
 
 .about .feedback-text, .about .about-text-first,
@@ -587,11 +616,20 @@ body {
 }
 
 .about .about-btn:hover, .about .about-btn:focus, .hero .hero-btn:hover, .hero .hero-btn:focus, .hero-search-form .hero-search-btn:hover, .hero-search-form .hero-search-btn:focus, .footer-form .footer-subscribe-btn:hover, .footer-form .footer-subscribe-btn:focus, .product-box-footer .btn-buy:hover, .product-box-footer .btn-buy:focus {
-  border: 1px solid rgba(104, 90, 82, 0.46);
   color: #402f2c;
+  border: 1px solid rgba(104, 90, 82, 0.46);
   background-color: #fff;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.hero .hero-btn, .hero-search-form .hero-search-btn, .footer-form .footer-subscribe-btn:hover, .footer-form .footer-subscribe-btn:focus, .product-box-footer .btn-buy, .product-box-footer .btn-add {
+  -webkit-transition: color, border, background-color, -webkit-box-shadow, -webkit-transform 400ms linear;
+  transition: color, border, background-color, -webkit-box-shadow, -webkit-transform 400ms linear;
+  transition: color, border, background-color, box-shadow, transform 400ms linear;
+  transition: color, border, background-color, box-shadow, transform 400ms linear, -webkit-box-shadow, -webkit-transform 400ms linear;
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
 }
 
 .statistics {

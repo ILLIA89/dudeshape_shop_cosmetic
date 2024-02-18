@@ -5,10 +5,13 @@
   .social-icon {
     fill: $btnTitleBgColor;
 
+    transition: fill, transform 400ms linear;
+
     &:hover,
     &:focus {
-      transform: scale(1.2);
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+      @extend %hover-focus-visual;
     }
   }
 }

@@ -50,7 +50,6 @@
     &:hover,
     &:focus {
       @extend %btn-hover-focus;
-      @extend %hover-focus-visual;
 
       .hero-search-icon {
         fill: $btnTitleBgColor;
@@ -118,7 +117,6 @@
     &:hover,
     &:focus {
       @extend %btn-hover-focus;
-      @extend %hover-focus-visual;
     }
   }
 }

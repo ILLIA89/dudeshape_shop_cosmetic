@@ -67,3 +67,8 @@
     transform 400ms linear;
   transition-duration: 400ms;
 }
+
+%hover-focus-visual {
+  transform: scale(1.1);
+  transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
+}

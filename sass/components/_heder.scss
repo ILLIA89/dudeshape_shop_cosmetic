@@ -34,8 +34,7 @@
     color: $textColor;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-    transform: scale(1.1);
-    transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
+    @extend %hover-focus-visual;
   }
 }
 
@@ -54,12 +53,14 @@
       display: block;
       stroke: $logoTitleColor;
 
+      transition: stroke, transform 400ms linear;
+
       &:hover,
       &:focus {
         stroke: $textColor;
-        transform: scale(1.1);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        transition: stroke, filter, transform 300ms linear;
+
+        @extend %hover-focus-visual;
       }
     }
 
@@ -67,14 +68,15 @@
       stroke: none;
       fill: $logoTitleColor;
 
-      transition: fill 300ms linear;
-      transition: filter 300ms linear;
+      transition: fill, transform 400ms linear;
 
       &:hover,
       &:focus {
         stroke: none;
         fill: $textColor;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        @extend %hover-focus-visual;
       }
     }
   }

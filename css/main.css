@@ -147,10 +147,6 @@ body {
 .nav-link:hover, .nav-link:focus {
   color: #555555;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
-          transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
 }
 
 .nav-btn-list {
@@ -166,27 +162,23 @@ body {
 .nav-btn-list .nav-btn .nav-btn-icon {
   display: block;
   stroke: #222222;
+  -webkit-transition: stroke, -webkit-transform 400ms linear;
+  transition: stroke, -webkit-transform 400ms linear;
+  transition: stroke, transform 400ms linear;
+  transition: stroke, transform 400ms linear, -webkit-transform 400ms linear;
 }
 .nav-btn-list .nav-btn .nav-btn-icon:hover, .nav-btn-list .nav-btn .nav-btn-icon:focus {
   stroke: #555555;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  -webkit-transition: stroke, -webkit-filter, -webkit-transform 300ms linear;
-  transition: stroke, -webkit-filter, -webkit-transform 300ms linear;
-  transition: stroke, filter, transform 300ms linear;
-  transition: stroke, filter, transform 300ms linear, -webkit-filter, -webkit-transform 300ms linear;
 }
 .nav-btn-list .nav-btn .custom-burg-icon {
   stroke: none;
   fill: #222222;
-  -webkit-transition: fill 300ms linear;
-  transition: fill 300ms linear;
-  -webkit-transition: -webkit-filter 300ms linear;
-  transition: -webkit-filter 300ms linear;
-  transition: filter 300ms linear;
-  transition: filter 300ms linear, -webkit-filter 300ms linear;
+  -webkit-transition: fill, -webkit-transform 400ms linear;
+  transition: fill, -webkit-transform 400ms linear;
+  transition: fill, transform 400ms linear;
+  transition: fill, transform 400ms linear, -webkit-transform 400ms linear;
 }
 .nav-btn-list .nav-btn .custom-burg-icon:hover, .nav-btn-list .nav-btn .custom-burg-icon:focus {
   stroke: none;
@@ -215,13 +207,6 @@ body {
   background: #402f2c;
   color: #fff;
 }
-.hero .hero-btn:hover, .hero .hero-btn:focus {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
-          transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
-}
-
 .hero-wrap {
   background-image: url(../images/cosmetic-set.webp);
   background-repeat: no-repeat;
@@ -298,12 +283,6 @@ body {
   height: 32px;
   background-color: #402f2c;
   border: none;
-}
-.hero-search-form .hero-search-btn:hover, .hero-search-form .hero-search-btn:focus {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
-          transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
 }
 .hero-search-form .hero-search-btn:hover .hero-search-icon, .hero-search-form .hero-search-btn:focus .hero-search-icon {
   fill: #402f2c;
@@ -434,10 +413,6 @@ body {
   fill: #555555;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
-          transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
 }
 
 .product {
@@ -473,19 +448,20 @@ body {
 .product-text-box .product-frame {
   margin-left: 8px;
 }
-.product-text-box .product-link:hover, .product-text-box .product-link:focus,
-.product-text-box .product-frame:hover,
-.product-text-box .product-frame:focus {
+.product-text-box .product-frame,
+.product-text-box .product-link {
+  -webkit-transition: color, fill, -webkit-transform 300ms linear;
+  transition: color, fill, -webkit-transform 300ms linear;
+  transition: color, fill, transform 300ms linear;
+  transition: color, fill, transform 300ms linear, -webkit-transform 300ms linear;
+}
+.product-text-box .product-frame:hover, .product-text-box .product-frame:focus,
+.product-text-box .product-link:hover,
+.product-text-box .product-link:focus {
   color: #555555;
   fill: #555555;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: color, fill, -webkit-filter, -webkit-transform 300ms linear;
-  transition: color, fill, -webkit-filter, -webkit-transform 300ms linear;
-  transition: color, fill, filter, transform 300ms linear;
-  transition: color, fill, filter, transform 300ms linear, -webkit-filter, -webkit-transform 300ms linear;
 }
 
 .product-list {
@@ -535,12 +511,6 @@ body {
   background-color: #402f2c;
   color: #fff;
 }
-.product-box-footer .btn-buy:hover, .product-box-footer .btn-buy:focus {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
-          transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
-}
 .product-box-footer .btn-add {
   border: 1px solid rgba(104, 90, 82, 0.46);
   background-color: #fff;
@@ -552,10 +522,6 @@ body {
   color: #fff;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
-          transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
 }
 
 .about .feedback-text, .about .about-text-first,
@@ -623,13 +589,22 @@ body {
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.hero .hero-btn, .hero-search-form .hero-search-btn, .footer-form .footer-subscribe-btn:hover, .footer-form .footer-subscribe-btn:focus, .product-box-footer .btn-buy, .product-box-footer .btn-add {
+.feedback-slider .feedback-btn, .about .about-btn, .hero .hero-btn, .hero-search-form .hero-search-btn, .footer-form .footer-subscribe-btn, .product-box-footer .btn-buy, .product-box-footer .btn-add {
   -webkit-transition: color, border, background-color, -webkit-box-shadow, -webkit-transform 400ms linear;
   transition: color, border, background-color, -webkit-box-shadow, -webkit-transform 400ms linear;
   transition: color, border, background-color, box-shadow, transform 400ms linear;
   transition: color, border, background-color, box-shadow, transform 400ms linear, -webkit-box-shadow, -webkit-transform 400ms linear;
   -webkit-transition-duration: 400ms;
           transition-duration: 400ms;
+}
+
+.feedback-slider .feedback-btn:hover .feedback-btn-icon, .feedback-slider .feedback-btn:focus .feedback-btn-icon, .about .about-btn:hover, .about .about-btn:focus, .nav-link:hover, .nav-link:focus, .nav-btn-list .nav-btn .nav-btn-icon:hover, .nav-btn-list .nav-btn .nav-btn-icon:focus, .nav-btn-list .nav-btn .custom-burg-icon:hover, .nav-btn-list .nav-btn .custom-burg-icon:focus, .hero .hero-btn:hover, .hero .hero-btn:focus, .hero-search-form .hero-search-btn:hover, .hero-search-form .hero-search-btn:focus, .footer-form .footer-subscribe-btn:hover, .footer-form .footer-subscribe-btn:focus, .investors-list .investor-icon:hover, .investors-list .investor-icon:focus, .product-text-box .product-frame:hover, .product-text-box .product-frame:focus,
+.product-text-box .product-link:hover,
+.product-text-box .product-link:focus, .product-box-footer .btn-buy:hover, .product-box-footer .btn-buy:focus, .product-box-footer .btn-add:hover, .product-box-footer .btn-add:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
+          transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
 }
 
 .statistics {
@@ -715,7 +690,7 @@ body {
 }
 .about .about-btn {
   min-width: 148px;
-  background: #402f2c;
+  background-color: #402f2c;
   color: #fff;
 }
 .about .about-img {

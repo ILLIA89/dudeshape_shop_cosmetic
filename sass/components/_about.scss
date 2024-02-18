@@ -34,13 +34,16 @@
 
   .about-btn {
     @extend %btn-style;
+    @extend %btn-transition;
+
     min-width: 148px;
-    background: $btnTitleBgColor;
+    background-color: $btnTitleBgColor;
     color: $bodyButtonFormColor;
 
     &:hover,
     &:focus {
       @extend %btn-hover-focus;
+      @extend %hover-focus-visual;
     }
   }
 

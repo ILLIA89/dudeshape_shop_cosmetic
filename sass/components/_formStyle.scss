@@ -1,4 +1,4 @@
-//......HERO-INPUT....... //
+//?......HERO-INPUT....... //
 
 .hero-search-form {
   max-width: 326px;
@@ -50,13 +50,10 @@
     &:hover,
     &:focus {
       @extend %btn-hover-focus;
-
-      transform: scale(1.1);
-      transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
+      @extend %hover-focus-visual;
 
       .hero-search-icon {
         fill: $btnTitleBgColor;
-        // transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
       }
     }
   }
@@ -65,7 +62,7 @@
   }
 }
 
-//......FOOTER-INPUT....... //
+//?......FOOTER-INPUT....... //
 
 .footer-form {
   .footer-form-wrap {
@@ -116,10 +113,12 @@
     background-color: $btnTitleBgColor;
     border: 1px solid rgba(104, 90, 82, 0.46);
 
+    @extend %btn-transition;
+
     &:hover,
     &:focus {
       @extend %btn-hover-focus;
-      @extend %btn-transition;
+      @extend %hover-focus-visual;
     }
   }
 }

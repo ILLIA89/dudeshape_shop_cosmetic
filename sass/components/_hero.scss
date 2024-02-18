@@ -28,9 +28,7 @@
     &:hover,
     &:focus {
       @extend %btn-hover-focus;
-
-      transform: scale(1.1);
-      transition-timing-function: cubic-bezier(0.4, 0.2, 0.1);
+      @extend %hover-focus-visual;
     }
   }
 }

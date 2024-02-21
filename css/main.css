@@ -597,7 +597,7 @@ body {
           transition-duration: 400ms;
 }
 
-.social-list .social-icon:hover, .social-list .social-icon:focus, .footer .address-list .address-item:hover, .footer .address-list .address-item:focus, .footer .quick-link:hover, .footer .quick-link:focus, .feedback-slider .feedback-btn:hover .feedback-btn-icon, .feedback-slider .feedback-btn:focus .feedback-btn-icon, .about .about-btn:hover, .about .about-btn:focus, .nav-link:hover, .nav-link:focus, .nav-btn-list .nav-btn .nav-btn-icon:hover, .nav-btn-list .nav-btn .nav-btn-icon:focus, .nav-btn-list .nav-btn .custom-burg-icon:hover, .nav-btn-list .nav-btn .custom-burg-icon:focus, .hero .hero-btn:hover, .hero .hero-btn:focus, .investors-list .investor-icon:hover, .investors-list .investor-icon:focus, .product-text-box .product-frame:hover, .product-text-box .product-frame:focus,
+.footer .address-list .address-item:hover, .footer .address-list .address-item:focus, .footer .quick-link:hover, .footer .quick-link:focus, .feedback-slider .feedback-btn:hover .feedback-btn-icon, .feedback-slider .feedback-btn:focus .feedback-btn-icon, .about .about-btn:hover, .about .about-btn:focus, .nav-link:hover, .nav-link:focus, .nav-btn-list .nav-btn .nav-btn-icon:hover, .nav-btn-list .nav-btn .nav-btn-icon:focus, .nav-btn-list .nav-btn .custom-burg-icon:hover, .nav-btn-list .nav-btn .custom-burg-icon:focus, .hero .hero-btn:hover, .hero .hero-btn:focus, .investors-list .investor-icon:hover, .investors-list .investor-icon:focus, .product-text-box .product-frame:hover, .product-text-box .product-frame:focus,
 .product-text-box .product-link:hover,
 .product-text-box .product-link:focus, .product-box-footer .btn-buy:hover, .product-box-footer .btn-buy:focus, .product-box-footer .btn-add:hover, .product-box-footer .btn-add:focus {
   -webkit-transform: scale(1.1);
@@ -893,4 +893,42 @@ body {
 .social-list .social-icon:hover, .social-list .social-icon:focus {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  -webkit-animation: shake 0.5s ease-in-out infinite;
+          animation: shake 0.5s ease-in-out infinite;
+  -webkit-animation-duration: 700ms;
+          animation-duration: 700ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20%, 50%, 80% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  40%, 60% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20%, 50%, 80% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  40%, 60% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
 }/*# sourceMappingURL=main.css.map */

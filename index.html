@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dudeshape</title>
+
     <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -22,6 +23,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
     />
+
+    <!---------------- Анімації --------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -29,8 +37,12 @@
       <!----------------------------------------------------------Heder and Navigation----------------------------------------------->
       <div class="container">
         <nav class="nav">
-          <a class="logo reset-link" href="">Dudeshape</a>
-          <ul class="nav-menu reset-list">
+          <a
+            class="logo reset-link animate__animated animate__slideInLeft"
+            href=""
+            >Dudeshape</a
+          >
+          <ul class="nav-menu reset-list animate__animated animate__fadeInDown">
             <li>
               <a class="nav-link reset-link" href="">Home</a>
             </li>
@@ -44,7 +56,9 @@
               <a class="nav-link reset-link" href="">Contact Us</a>
             </li>
           </ul>
-          <ul class="nav-btn-list reset-list">
+          <ul
+            class="nav-btn-list reset-list animate__animated animate__slideInRight"
+          >
             <li class="nav-btn-item">
               <button type="button" class="nav-btn" tabindex="-1">
                 <svg width="24" height="24" class="nav-btn-icon" tabindex="0">
@@ -79,7 +93,9 @@
       <!------------------------------------------------------------------ Hero -------------------------------------------------------->
       <section class="hero hero-wrap">
         <div class="container">
-          <h1 class="hero-title">Get Your Best Cosmetic Products Here</h1>
+          <h1 class="hero-title animate__animated">
+            Get Your Best Cosmetic Products Here
+          </h1>
           <p class="hero-text">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy
@@ -152,42 +168,60 @@
           <h2 class="visually-hidden">investors</h2>
           <ul class="investors-list reset-list custom-box">
             <li class="investor-item">
-              <a class="investor-link reset-link" href="#">
+              <a
+                class="investor-link reset-link animate__animated animate__flipInX"
+                href="#"
+              >
                 <svg width="90" height="28" class="investor-icon">
                   <use href="images/sprite.svg#airbnb-logo-icon"></use>
                 </svg>
               </a>
             </li>
             <li class="investor-item">
-              <a class="investor-link reset-link" href="#">
+              <a
+                class="investor-link reset-link animate__animated animate__flipInX"
+                href="#"
+              >
                 <svg width="84" height="24" class="investor-icon">
                   <use href="images/sprite.svg#hubspot-logo-icon"></use>
                 </svg>
               </a>
             </li>
             <li class="investor-item">
-              <a class="investor-link reset-link" href="#">
+              <a
+                class="investor-link reset-link animate__animated animate__flipInX"
+                href="#"
+              >
                 <svg width="84" height="28" class="investor-icon">
                   <use href="images/sprite.svg#google-logo-icon"></use>
                 </svg>
               </a>
             </li>
             <li class="investor-item">
-              <a class="investor-link reset-link" href="#">
+              <a
+                class="investor-link reset-link animate__animated animate__flipInX"
+                href="#"
+              >
                 <svg width="122" height="26" class="investor-icon">
                   <use href="images/sprite.svg#microsoft-logo-icon"></use>
                 </svg>
               </a>
             </li>
             <li class="investor-item">
-              <a class="investor-link reset-link" href="#">
+              <a
+                class="investor-link reset-link animate__animated animate__flipInX"
+                href="#"
+              >
                 <svg width="111" height="26" class="investor-icon">
                   <use href="images/sprite.svg#walmart-logo-icon"></use>
                 </svg>
               </a>
             </li>
             <li class="investor-item">
-              <a class="investor-link reset-link" href="#">
+              <a
+                class="investor-link reset-link animate__animated animate__flipInX"
+                href="#"
+              >
                 <svg width="80" height="24" class="investor-icon">
                   <use href="images/sprite.svg#fedex-logo-icon"></use>
                 </svg>
@@ -423,7 +457,7 @@
             </ul>
           </nav>
           <address class="footer-contact">
-            <h2 class="footer-title">Contact Us</h2>
+            <p class="footer-title">Contact Us</p>
             <ul class="address-list reset-list">
               <li class="address-item">
                 <a
@@ -471,7 +505,7 @@
 
     <!-------------------------------------------------------------------------Swiper js------------------------------------------------------
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
     <!-- Initialize swiper -->
     <!-- <script>
       const swiper = new Swiper('.mySwiper', {

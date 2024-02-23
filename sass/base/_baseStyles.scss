@@ -23,9 +23,27 @@ address {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: 100%;
 }
+
+//? Image
+
+.img-container {
+  overflow: hidden;
+  // width: 600px;
+  // height: 484px;
+
+  .transform-img {
+    transition: transform 900ms;
+    object-fit: cover;
+  }
+
+  &:hover .transform-img {
+    transform: scale(1.1);
+  }
+}
+//? Image
 
 .visually-hidden {
   position: absolute;

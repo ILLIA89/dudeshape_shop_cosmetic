@@ -23,8 +23,24 @@ address {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: 100%;
+}
+
+.img-container {
+  overflow: hidden;
+}
+.img-container .transform-img {
+  -webkit-transition: -webkit-transform 900ms;
+  transition: -webkit-transform 900ms;
+  transition: transform 900ms;
+  transition: transform 900ms, -webkit-transform 900ms;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.img-container:hover .transform-img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .visually-hidden {
@@ -483,24 +499,6 @@ body {
   border-right: 1px solid rgba(104, 90, 82, 0.19);
   border-left: 1px solid rgba(104, 90, 82, 0.19);
 }
-.product-card-container .img-product-container {
-  overflow: hidden;
-  max-width: 598px;
-}
-.product-card-container .img-product-container .product-img {
-  -webkit-transition: -webkit-transform 900ms;
-  transition: -webkit-transform 900ms;
-  transition: transform 900ms;
-  transition: transform 900ms, -webkit-transform 900ms;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.product-card-container .img-product-container:hover .product-img {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
 .product-card-container .product-title-card {
   margin-bottom: 16px;
 }
@@ -706,17 +704,8 @@ body {
   background-color: #402f2c;
   color: #fff;
 }
-.about .about-img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .about .feedback-box {
   padding: 30px 0 70px 0;
-}
-.about .feedback-img {
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .about .feedback-title {
   margin-bottom: 12px;

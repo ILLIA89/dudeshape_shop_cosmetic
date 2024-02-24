@@ -39,6 +39,7 @@
   .hero-search-btn {
     @extend %btn-transition;
     position: absolute;
+    display: flex;
     top: 8px;
     right: 8px;
     padding: 8px;

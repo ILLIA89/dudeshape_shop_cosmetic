@@ -292,6 +292,9 @@ body {
 }
 .hero-search-form .hero-search-btn {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   top: 8px;
   right: 8px;
   padding: 8px;

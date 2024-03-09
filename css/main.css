@@ -208,6 +208,7 @@ body {
 }
 
 .hero {
+  position: relative;
   max-width: 1440px;
   background: #f9f6f5;
   padding: 47px 0 102px 0;
@@ -227,12 +228,6 @@ body {
   background: #402f2c;
   color: #fff;
 }
-.hero-wrap {
-  background-image: url(../images/cosmetic-set.webp);
-  background-repeat: no-repeat;
-  background-position: 100%;
-}
-
 .hero-search-form {
   max-width: 326px;
   margin-bottom: 60px;

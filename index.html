@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dudeshape</title>
 
-    <!-- <link
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    /> -->
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -91,10 +91,12 @@
         </nav>
       </div>
     </header>
+
     <main>
       <!------------------------------------------------------------------ Hero -------------------------------------------------------->
       <section class="hero hero-wrap">
         <div class="container">
+          <!-- <div class="hero-container"></div> -->
           <h1 class="hero-title animate__animated animate__fadeInDown">
             Get Your Best Cosmetic Products Here
           </h1>
@@ -121,18 +123,12 @@
 
           <button type="button" class="hero-btn">Shop Now</button>
 
-          <!-- Slider main container -->
-          <!-- <div class="swiper mySwiper"> -->
-          <!-- Additional required wrapper -->
-          <!-- <div class="swiper-wrapper"> -->
-          <!-- Slides -->
-          <!-- <div class="swiper-slide">
-                <img
-                  src="images/cosmetic-set.webp"
-                  alt="cosmetic-set"
-                  class="slide-img"
-                />
-              </div>
+          <!-- !Slider main container -->
+
+          <div class="swiper mySwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
               <div class="swiper-slide">
                 <img
                   src="images/cosmetic-set.webp"
@@ -147,8 +143,15 @@
                   class="slide-img"
                 />
               </div>
-            </div> -->
-          <!-- <div class="swiper-btn-container">
+              <div class="swiper-slide">
+                <img
+                  src="images/cosmetic-set.webp"
+                  alt="cosmetic-set"
+                  class="slide-img"
+                />
+              </div>
+            </div>
+            <div class="swiper-btn-container">
               <div class="btn-prev">
                 <svg width="50" height="50" class="hero-slider-icon">
                   <use href="images/sprite.svg#icon-arrow-left-icon"></use>
@@ -160,8 +163,7 @@
                 </svg>
               </div>
             </div>
-          </div> -->
-          <!-- <div class="hero-container"></div> -->
+          </div>
         </div>
       </section>
       <!---------------------------------------------------------------Investors------------------------------------------------------>
@@ -512,11 +514,13 @@
       </div>
     </footer>
 
-    <!-------------------------------------------------------------------------Swiper js------------------------------------------------------
+    <!---------------------------------------------------------------------------- Swiper JS ------------------------------------------------------>
 
-    <-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
-    <!-- Initialize swiper -->
-    <!-- <script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- !Initialize swiper -->
+
+    <script>
       const swiper = new Swiper('.mySwiper', {
         slidesPerViwe: 1,
         spaceBetween: 10,
@@ -529,7 +533,8 @@
           prevEl: '.btn-prev',
         },
       });
-    </script> -->
+    </script>
+
     <!---------------------------------------------------------------Visual in console input submit--------------------------------------------->
     <script>
       (() => {
